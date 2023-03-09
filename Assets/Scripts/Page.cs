@@ -51,7 +51,6 @@ public class Page : MonoBehaviour
             canvasGroup.DOFade(1, fadeTime);
             StartCoroutine(nameof(ItemAnimation));
         }
-
     }
 
     public void PanelFaseOut()

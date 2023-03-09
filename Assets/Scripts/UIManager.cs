@@ -31,7 +31,6 @@ public class UIManager : MonoBehaviour
     {
         GameObject newPage = Pages[PageNumber];
         Page newPageScript = newPage.GetComponent<Page>();
-        //newPage.gameObject.SetActive(true);
         newPageScript.PanelFadeIn();
         //currentPageNumber = newPageItem;
     }
