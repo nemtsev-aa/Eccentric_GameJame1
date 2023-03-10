@@ -83,6 +83,7 @@ public class GameProcessManager : MonoBehaviour
 
     private void _timeManager_GameTimeOut()
     {
+        Debug.Log("GameTimeOut");
         GameLose();
     }
 

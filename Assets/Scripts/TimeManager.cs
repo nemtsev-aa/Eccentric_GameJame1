@@ -7,7 +7,7 @@ public class TimeManager : MonoBehaviour
     [SerializeField] private GameProcessManager _gameProcessManager;
     [Tooltip("Статус таймера")]
     [SerializeField] private bool _status;
-    [Tooltip("Время на сбор монет")]
+    [Tooltip("Время уровня")]
     [SerializeField] private float _gameTime;
     [Tooltip("Значение таймера (текст)")]
     [SerializeField] private string _textValue;
@@ -41,6 +41,7 @@ public class TimeManager : MonoBehaviour
     private void _gameProcessManager_SettingGameTime(float gameTime)
     {
         _gameTime = gameTime;
+        Debug.Log(gameTime);
     }
 
     private void _gameProcessManager_OnResume()
